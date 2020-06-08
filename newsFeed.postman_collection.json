@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "43b901ec-9159-4a6b-b950-269655e1e3f4",
+		"name": "newsFeed",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "admin signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userName\" : \"admin\",\n\t\"password\" : \"admin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/admin/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"admin",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userName\" : \"admin\",\n\t\"password\" : \"admin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/admin/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"admin",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add feed",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"feedUrl\" : \"abcd.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/feeds",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"feeds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get newsFeed",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get newsFeed by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/feeds/5ede830f25268a1ca08d7a85",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"feeds",
+						"5ede830f25268a1ca08d7a85"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete newsFeed",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "7d520ea8-e976-408b-b217-ac85ff48e2c3",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "425cfee7-9ce0-414e-bace-c568c6e87111",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
